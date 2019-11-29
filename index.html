@@ -8,13 +8,15 @@
     <style>
         .container {
             display: grid;
-            width: 100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             height: 100vh;
+            width: 100%;
             grid-template-areas: 
-            "logo" "title" "social"
-            "content" "content" "article"
-            "content" "content" "photo"
-            "contact" "hours" "address";
+            "logo title social"
+            "stuff stuff article"
+            "stuff stuff photo"
+            "contact hours address";
         }
 
         .item {
@@ -38,7 +40,7 @@
 
         .yellow {
            background-color: yellow; 
-            grid-area: content;
+            grid-area: stuff;
         }
 
         .brown {
